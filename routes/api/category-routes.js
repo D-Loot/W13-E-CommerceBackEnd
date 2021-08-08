@@ -4,10 +4,6 @@ const { Category, Product } = require('../../models');
 // The `/api/categories` endpoint
 
 router.get('/', async (req, res) => {
-//-----------------------------------------------
-// 13 - 28 main/routes/api/locationRoutes.js
-//-----------------------------------------------
-// TODO:
   // find all categories
   // be sure to include its associated Products
   try {
@@ -19,11 +15,9 @@ router.get('/', async (req, res) => {
   } catch (err){
     res.status(500).json(err);
   }
-
 });
 
 router.get('/:id', async (req, res) => {
-  // TODO:
   // find one category by its `id` value
   // be sure to include its associated Products
   try {
@@ -43,7 +37,6 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  // TODO:
   // create a new category
   try {
     const categoryData = await Category.create(req.body);
@@ -54,11 +47,7 @@ router.post('/', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-    // TODO:
   // update a category by its `id` value  (req.body.id)
-// --------------------------------------------------------------------------
-// 13 - 08 solved/routes/api/bookRoutes
-// --------------------------------------------------------------------------
   try{
     const categoryData = await Category.update(
     {
@@ -80,9 +69,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-    // TODO:
   // delete a category by its `id` value
-
   try {
     const categoryData = await Category.destroy({
       where: { id: req.params.id }

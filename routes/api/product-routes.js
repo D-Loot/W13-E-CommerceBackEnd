@@ -5,11 +5,9 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 router.get('/', async (req, res) => {
-    // TODO:
   // find all products
   // be sure to include its associated Category and Tag data
   try {
-    // REF: https://gist.github.com/zcaceres/83b554ee08726a734088d90d455bc566
     const productData = await Product.findAll(
       {
       include:[{model:Category},{model:Tag}]
@@ -22,7 +20,6 @@ router.get('/', async (req, res) => {
 
 // get one product
 router.get('/:id', async (req, res) => {
-    // TODO:
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
   try {
@@ -43,7 +40,6 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
-    // TODO:
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -54,7 +50,6 @@ router.post('/', (req, res) => {
   */
     Product.create(req.body)
     .then((product) => {
-        // TODO:
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
@@ -77,7 +72,6 @@ router.post('/', (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
-    // TODO:
   // update product data
   Product.update(req.body, {
     where: {
@@ -113,7 +107,6 @@ router.put('/:id', (req, res) => {
     })
     .then((updatedProductTags) => res.json(updatedProductTags))
     .catch((err) => {
-      // console.log(err);
       res.status(400).json(err);
     });
 });

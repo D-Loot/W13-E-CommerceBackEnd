@@ -1,5 +1,56 @@
 # 13 Object-Relational Mapping (ORM): E-Commerce Back End
 
+# The Task
+
+The task was to create the back end of an e-commerce website by utilizing Express.js to interact with a MySQL database, query information and fullfill requests. In this assignment, I took existing code and updated it to include Express.js functionality. The model files create classes which are then used in the Routes.js files.
+
+Once the database is created and seeded, and the server is running, Insomnia is used to re-create the requests from a front end. Using CRUD commands GET, PULL, PUT and DELETE, Insomnia is then used to interact with the database.
+
+## Acceptance Criteria
+
+```
+GIVEN a functional Express.js API
+
+    WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+        THEN I am able to connect to a database using Sequelize
+
+    WHEN I enter schema and seed commands
+        THEN a development database is created and is seeded with test data
+
+    WHEN I enter the command to invoke the application
+        THEN my server is started and the Sequelize models are synced to the MySQL database
+
+    WHEN I open API GET routes in Insomnia Core for categories, products, or tags
+        THEN the data for each of these routes is displayed in a formatted JSON
+
+    WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
+        THEN I am able to successfully create, update, and delete data in my database
+```
+
+Once the files were finalized, everything was uploaded to a Github Repository
+
+    * Repository contains:
+    *       quality README file with description,
+    *       screenshots, and
+    *       link to the video demonstration,
+    *       the URL of the GitHub repository, with a unique name.
+
+![TitlePic](./Assets/TitlePic.PNG)
+
+![TitlePic2](./Assets/TitlePic2.PNG)
+
+![TitlePic3](./Assets/TitlePic3.PNG)
+
+![TitlePic4](./Assets/TitlePic4.PNG)
+
+Video 1: https://drive.google.com/file/d/1PrTOQv85L66UC4fr8TQ7_WvROaUY_mU0/view
+
+Video 2: https://drive.google.com/file/d/1PrTOQv85L66UC4fr8TQ7_WvROaUY_mU0/view
+
+Github: https://github.com/D-Loot/W11-ExpressJS-NoteTaker
+
+# Background
+
 ## Your Task
 
 Internet retail, also known as **e-commerce**, is the largest sector of the electronics industry, generating an estimated $29 trillion in 2019. E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to their prevalence, understanding the fundamental architecture of these platforms will benefit you as a full-stack web developer.
@@ -63,75 +114,75 @@ Your database should contain the following four models, including the requiremen
   * `id`
 
     * Integer.
-  
+
     * Doesn't allow null values.
-  
+
     * Set as primary key.
-  
+
     * Uses auto increment.
 
   * `category_name`
-  
+
     * String.
-  
+
     * Doesn't allow null values.
 
 * `Product`
 
   * `id`
-  
+
     * Integer.
-  
+
     * Doesn't allow null values.
-  
+
     * Set as primary key.
-  
+
     * Uses auto increment.
 
   * `product_name`
-  
+
     * String.
-  
+
     * Doesn't allow null values.
 
   * `price`
-  
+
     * Decimal.
-  
+
     * Doesn't allow null values.
-  
+
     * Validates that the value is a decimal.
 
   * `stock`
-  
+
     * Integer.
-  
+
     * Doesn't allow null values.
-  
+
     * Set a default value of `10`.
-  
+
     * Validates that the value is numeric.
 
   * `category_id`
-  
+
     * Integer.
-  
+
     * References the `Category` model's `id`.
 
 * `Tag`
 
   * `id`
-  
+
     * Integer.
-  
+
     * Doesn't allow null values.
-  
+
     * Set as primary key.
-  
+
     * Uses auto increment.
 
   * `tag_name`
-  
+
     * String.
 
 * `ProductTag`
@@ -186,7 +237,7 @@ Create the code needed in `server.js` to sync the Sequelize models to the MySQL 
 
 ## Grading Requirements
 
-This homework is graded based on the following criteria: 
+This homework is graded based on the following criteria:
 
 ### Deliverables: 10%
 
