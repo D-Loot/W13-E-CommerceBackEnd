@@ -35,19 +35,41 @@ Once the files were finalized, everything was uploaded to a Github Repository
     *       link to the video demonstration,
     *       the URL of the GitHub repository, with a unique name.
 
-![TitlePic](./Assets/TitlePic.PNG)
+![01-Insomnia](./Assets/images/01-Insomnia.PNG)
 
-![TitlePic2](./Assets/TitlePic2.PNG)
+![02-Insomnia](./Assets/images/02-Insomnia.PNG)
 
-![TitlePic3](./Assets/TitlePic3.PNG)
+![03-Insomnia](./Assets/images/03-Insomnia.PNG)
 
-![TitlePic4](./Assets/TitlePic4.PNG)
+![04-Insomnia](./Assets/images/04-Insomnia.PNG)
 
-Video 1: https://drive.google.com/file/d/1PrTOQv85L66UC4fr8TQ7_WvROaUY_mU0/view
+![05-Insomnia](./Assets/images/05-Insomnia.PNG)
 
-Video 2: https://drive.google.com/file/d/1PrTOQv85L66UC4fr8TQ7_WvROaUY_mU0/view
+![06-Insomnia](./Assets/images/06-Insomnia.PNG)
 
-Github: https://github.com/D-Loot/W11-ExpressJS-NoteTaker
+![07-Insomnia](./Assets/images/07-Insomnia.PNG)
+
+![08-Insomnia](./Assets/images/08-Insomnia.PNG)
+
+![09-Insomnia](./Assets/images/09-Insomnia.PNG)
+
+![10-Insomnia](./Assets/images/10-Insomnia.PNG)
+
+![11-Insomnia](./Assets/images/11-Insomnia.PNG)
+
+![12-Insomnia](./Assets/images/12-Insomnia.PNG)
+
+![13-Insomnia](./Assets/images/13-Insomnia.PNG)
+
+![14-Insomnia](./Assets/images/14-Insomnia.PNG)
+
+![15-Insomnia](./Assets/images/15-Insomnia.PNG)
+
+Video 1: https://drive.google.com/file/d/1sRvFKxVf0XeReYZKxksU3Awu4fmYYol7/view
+
+Video 2: https://drive.google.com/file/d/1xVs2_9QhJi3Eu3774r1iOUWwu65P5rRx/view
+
+Github: https://github.com/D-Loot/W13-E-CommerceBackEnd
 
 # Background
 
